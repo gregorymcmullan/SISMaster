@@ -1,10 +1,23 @@
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
 
 public class SISRunner
 	{
 
-		public static void main(String[] args)
+		static ArrayList<Student> roster = new ArrayList<Student>();
+		
+		public static void main(String[] args) throws FileNotFoundException
 			{
-				// TODO Auto-generated method stub
+				FileReader.readFile();
+				//testArrayList();
+			}
+		
+		public static void testArrayList()
+			{
+				for(Student t: roster)
+					{
+						System.out.println(t.getFirstName() + " " + t.getLastName());
+					}
 			}
 
 	}

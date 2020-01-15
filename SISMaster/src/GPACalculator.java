@@ -16,8 +16,8 @@ public class GPACalculator
 					double GPAMath = (firstGrade + secondGrade + thirdGrade)/3.0;
 					String totalGPA = decFor.format(GPAMath);
 					
-					System.out.println(totalGPA);
-					//SISRunner.roster.get(i).setGradePointAverage(Double.parseDouble(totalGPA));
+					//System.out.println(totalGPA);
+					SISRunner.roster.get(i).setGradePointAverage(Double.parseDouble(totalGPA));
 				}
 		}
 		

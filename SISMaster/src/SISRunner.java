@@ -11,7 +11,7 @@ public class SISRunner
 			{
 				FileReader.readFile();
 				GPACalculator.calculateGPAForEachStudent();
-				//testArrayList();
+				testArrayList();
 			}
 		
 		public static void testArrayList()

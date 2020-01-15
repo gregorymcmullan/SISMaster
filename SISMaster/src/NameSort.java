@@ -38,7 +38,6 @@ public static void askToSort() {
 	
 	
 	
-	
 
 }
 public static void displayPeriodSorterMenu() {

@@ -11,6 +11,8 @@ public class MainMenu
 				
 				int mainMenuChoice = SISRunner.userIntInput.nextInt();
 				
+				
+				//default for the later to do a while loop
 				switch (mainMenuChoice)
 				{
 					case 1:

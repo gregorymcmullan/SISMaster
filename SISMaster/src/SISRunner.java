@@ -1,17 +1,22 @@
 import java.io.FileNotFoundException;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class SISRunner
 	{
 		
 		// Please place all of the main static variables here VVVVVVV
 		static ArrayList<Student> roster = new ArrayList<Student>();
+		static DecimalFormat decFor = new DecimalFormat("0.00");
+		static Scanner userIntInput = new Scanner(System.in);
 		
 		public static void main(String[] args) throws FileNotFoundException
 			{
 				FileReader.readFile();
 				GPACalculator.calculateGPAForEachStudent();
-				testArrayList();
+				MainMenu.printMainMenu();
+				//testArrayList();
 			}
 		
 		public static void testArrayList()

@@ -18,7 +18,7 @@ public class Submenus
 				{
 					i = intInput.nextInt();
 					
-					Student.remove(i).getfirstName;
+					Student.class.getClass().g;
 				}
 			
 			if (choiceOne == 2)

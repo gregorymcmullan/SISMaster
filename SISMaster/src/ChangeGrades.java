@@ -9,9 +9,9 @@ public class ChangeGrades
 		//var
 		String fName;
 		String lName;
+		String[] schedule;
 		int period;
-		int switchPeriod;
-		String temp;
+		String nGrade;
 		Scanner strInput = new Scanner(System.in);
 		Scanner intInput = new Scanner(System.in);
 		
@@ -27,18 +27,23 @@ public class ChangeGrades
 		System.out.println("Enter a Class Period Number");
 		System.out.print("Input: ");
 		period = intInput.nextInt();
-		System.out.println("Enter a Class Period Number to Swich With");
+		System.out.println("Enter a New Grade");
 		System.out.print("Input: ");
-		switchPeriod = intInput.nextInt();
+		nGrade = strInput.nextLine();
 		
-		//switchClasses
+		//changeGrade
 		for (int i = 0; i < SISRunner.roster.size(); i++)
 		{
 			
 			if (SISRunner.roster.get(i).getFirstName() == fName && SISRunner.roster.get(i).getFirstName() == lName)
 			{
 				
-				SISRunner.roster.get(i).getFirstClass;
+				schedule = new String[] { SISRunner.roster.get(i).getFirstGrade(),
+						SISRunner.roster.get(i).getSecondGrade(), SISRunner.roster.get(i).getThirdGrade() };
+				schedule[period] = nGrade;
+				SISRunner.roster.get(i).setFirstGrade(schedule[0]);
+				SISRunner.roster.get(i).setSecondGrade(schedule[1]);
+				SISRunner.roster.get(i).setThirdGrade(schedule[2]);
 				
 			}
 			

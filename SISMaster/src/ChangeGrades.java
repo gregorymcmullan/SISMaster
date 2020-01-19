@@ -9,7 +9,7 @@ public class ChangeGrades
 		//var
 		String fName;
 		String lName;
-		String[] schedule;
+		String[] gSchedule;
 		int period;
 		String nGrade;
 		Scanner strInput = new Scanner(System.in);
@@ -38,12 +38,12 @@ public class ChangeGrades
 			if (SISRunner.roster.get(i).getFirstName() == fName && SISRunner.roster.get(i).getFirstName() == lName)
 			{
 				
-				schedule = new String[] { SISRunner.roster.get(i).getFirstGrade(),
+				gSchedule = new String[] { SISRunner.roster.get(i).getFirstGrade(),
 						SISRunner.roster.get(i).getSecondGrade(), SISRunner.roster.get(i).getThirdGrade() };
-				schedule[period] = nGrade;
-				SISRunner.roster.get(i).setFirstGrade(schedule[0]);
-				SISRunner.roster.get(i).setSecondGrade(schedule[1]);
-				SISRunner.roster.get(i).setThirdGrade(schedule[2]);
+				gSchedule[period] = nGrade;
+				SISRunner.roster.get(i).setFirstGrade(gSchedule[0]);
+				SISRunner.roster.get(i).setSecondGrade(gSchedule[1]);
+				SISRunner.roster.get(i).setThirdGrade(gSchedule[2]);
 				
 			}
 			

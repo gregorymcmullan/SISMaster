@@ -18,13 +18,15 @@ public class Submenus
 				{
 					i = intInput.nextInt();
 					
-					Student.class.getClass().g;
+					Student.class.getClass();
 				}
 			
 			if (choiceOne == 2)
 				{
 					
 				}
-		
+		if(choiceOne==3) {
+		MenuChoices.askToSort();
+		}
 		}
 	}

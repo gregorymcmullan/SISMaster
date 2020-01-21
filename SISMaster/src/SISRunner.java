@@ -1,3 +1,4 @@
+
 import java.io.FileNotFoundException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -14,6 +15,13 @@ public class SISRunner
 		
 		public static void main(String[] args) throws FileNotFoundException
 			{
+
+				/*FileReader.readFile();
+				GPACalculator.calculateGPAForEachStudent();
+				MainMenu.printMainMenu();
+				Submenus.addOrDelete();*/
+
+
 				while(stillInSystem)
 					{
 						System.out.println();
@@ -23,6 +31,7 @@ public class SISRunner
 				//testArrayList();
 				//ChangeGrades.changeGrades();
 				//GPACalculator.calculateGPAForEachStudent();
+
 				//testArrayList();
 				//ChangeSchedule.changeSchedule();
 				//testArrayList();

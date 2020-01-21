@@ -29,16 +29,16 @@ public class ChangeSchedule
 		// getClass
 		System.out.println("Enter a Class Period Number");
 		System.out.print("Input: ");
-		period = intInput.nextInt();
+		period = intInput.nextInt() - 1;
 		System.out.println("Enter a Class Period Number to Swich With");
 		System.out.print("Input: ");
-		switchPeriod = intInput.nextInt();
+		switchPeriod = intInput.nextInt() - 1;
 
 		// switchClassesWithGrades
 		for (int i = 0; i < SISRunner.roster.size(); i++)
 		{
 
-			if (SISRunner.roster.get(i).getFirstName() == fName && SISRunner.roster.get(i).getFirstName() == lName)
+			if (SISRunner.roster.get(i).getFirstName().equals(fName) && SISRunner.roster.get(i).getLastName().equals(lName))
 			{
 
 				//classes

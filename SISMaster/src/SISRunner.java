@@ -12,6 +12,8 @@ public class SISRunner
 				FileReader.readFile();
 				GPACalculator.calculateGPAForEachStudent();
 				testArrayList();
+				Submenus.addOrDelete();
+				
 			}
 		
 		public static void testArrayList()
@@ -27,6 +29,8 @@ public class SISRunner
 				// TODO Auto-generated method stub
 				
 			}
+		
+		
 
 	}
 

@@ -26,7 +26,7 @@ public class ChangeGrades
 		//getClass
 		System.out.println("Enter a Class Period Number");
 		System.out.print("Input: ");
-		period = intInput.nextInt();
+		period = intInput.nextInt() - 1;
 		System.out.println("Enter a New Grade");
 		System.out.print("Input: ");
 		nGrade = strInput.nextLine();
@@ -35,7 +35,7 @@ public class ChangeGrades
 		for (int i = 0; i < SISRunner.roster.size(); i++)
 		{
 			
-			if (SISRunner.roster.get(i).getFirstName() == fName && SISRunner.roster.get(i).getFirstName() == lName)
+			if (SISRunner.roster.get(i).getFirstName().equals(fName) && SISRunner.roster.get(i).getLastName().equals(lName))
 			{
 				
 				gSchedule = new String[] { SISRunner.roster.get(i).getFirstGrade(),
@@ -44,6 +44,8 @@ public class ChangeGrades
 				SISRunner.roster.get(i).setFirstGrade(gSchedule[0]);
 				SISRunner.roster.get(i).setSecondGrade(gSchedule[1]);
 				SISRunner.roster.get(i).setThirdGrade(gSchedule[2]);
+				
+			
 				
 			}
 			

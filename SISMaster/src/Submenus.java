@@ -81,9 +81,11 @@ public class Submenus
 
 		private static void displayStudents()
 			{
+				int counter = 1;
 				for (Student s: SISRunner.roster)
 					{
-						System.out.println(s.getFirstName() + " " + s.getLastName());
+						System.out.println(counter + ": " + s.getFirstName() + " " + s.getLastName());
+						counter++;
 					}				
 			}
 	}

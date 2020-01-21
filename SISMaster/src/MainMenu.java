@@ -7,7 +7,8 @@ public class MainMenu
 				System.out.println("What would you like to do? \n"
 						+ "1) Add or delete a student? \n"
 						+ "2) Change student grades / schedule \n"
-						+ "3) Sort Students ");
+						+ "3) Sort Students \n"
+						+ "4) Exit System");
 				
 				int mainMenuChoice = SISRunner.userIntInput.nextInt();
 				
@@ -19,10 +20,15 @@ public class MainMenu
 						//do the adding or deleting thing here
 						break;
 					case 2:
-						//do the changing here
+						SISRunner.switchMenuAndgrades();
 						break;
 					case 3:
 						//sort the students here
+						break;
+					case 4:
+						System.out.println("Thank you");
+						SISRunner.stillInSystem = false;
+						break;
 					default:
 						System.out.println("Please enter a number between 1 and 3.");
 				}

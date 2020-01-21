@@ -15,7 +15,9 @@ public class Submenus
 			Scanner stringInput = new Scanner(System.in);
 
 			System.out.println("");
-			System.out.println("Would you like to (1) delete a student or (2) add a student?");
+			System.out.println("What would you like to do?\n"
+					+ "1) delete a student\n"
+					+ "2) add a student");
 		
 			choiceOne = intInput.nextInt();
 			

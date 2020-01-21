@@ -43,7 +43,7 @@ public class SISRunner
 				int counter = 1;
 				for(Student t: roster)
 					{
-						System.out.println(counter + ": " + t.getFirstName() + " " + t.getLastName() + " " + t.getFirstClass() + " " + t.getFirstGrade() + " " + t.getSecondClass() + " " + t.getSecondGrade() + " " +  t.getThirdClass() + " " + t.getThirdGrade() + " " + t.getGradePointAverage());
+						System.out.println(counter + ": " + t.getFirstName() + " " + t.getLastName() + " " + t.getFirstClass() + " " + t.getFirstGrade() + " " + t.getSecondClass() + " " + t.getSecondGrade() + " " +  t.getThirdClass() + " " + t.getThirdGrade() + " " +  t.getGradePointAverage());
 						counter++;
 					}
 			}
